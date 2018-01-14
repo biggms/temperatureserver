@@ -12,7 +12,8 @@
       "idle": 10000
     },
     "define": {
-      "updatedAt": false
+      "updatedAt": false,
+      "freezeTableName": true
     }
   },
   "test": {

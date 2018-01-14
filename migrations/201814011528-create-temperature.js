@@ -22,7 +22,11 @@ module.exports = {
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE
-            }
+            },
+            revision: {
+                type: Sequelize.INTEGER,
+                defaultValue: 0
+            },
         });
     },
     down: (queryInterface, Sequelize) => {

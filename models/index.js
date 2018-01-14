@@ -18,7 +18,6 @@ if (config.use_env_variable) {
 var opts = {
   UUID: true,
   enableCompression: true,
-  enableMigration: true
 };
 
 var PaperTrail = require("sequelize-paper-trail").init(sequelize, opts);

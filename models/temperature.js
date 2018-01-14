@@ -5,8 +5,9 @@ module.exports = (sequelize, DataTypes) => {
     var Temperature = sequelize.define('Temperature', {
             id: {type: DataTypes.UUID, primaryKey: true, defaultValue: DataTypes.UUIDV4},
             name: {type: DataTypes.STRING, allowNull: false, unique: true},
-            mac: {type: DataTypes.STRING, allowNull: false, unique: true, },
+            mac: {type: DataTypes.STRING, allowNull: false, unique: true,},
             value: {type: DataTypes.DOUBLE},
+            revision: {type: DataTypes.INTEGER, defaultValue: 0}
         }
     );
 
